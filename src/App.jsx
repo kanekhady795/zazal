@@ -1,11 +1,71 @@
 
 
 import { useState, useEffect, useRef, useCallback } from "react";
-import studio1 from './assets/studio1.png';
-import portrait1 from './assets/portrait1.png';
-import famille1 from './assets/famille1.png';
-import mariage1 from './assets/mariage1.png';
-import event1 from './assets/event1.png';
+import s1 from './assets/s1.jpeg';
+import s2 from './assets/s2.jpeg';
+import s3 from './assets/s3.jpeg';
+
+import p1 from './assets/p1.jpeg';
+import e1 from './assets/e1.jpeg';
+
+import p2 from './assets/p2.jpeg';
+import p3 from './assets/p3.jpeg';
+import p4 from './assets/p4.jpeg';
+import p5 from './assets/p5.jpeg';
+import p6 from './assets/p6.jpeg';
+import p7 from './assets/p7.jpeg';
+import p9 from './assets/p9.jpeg';
+import p10 from './assets/p10.jpeg';
+import p11 from './assets/p11.jpeg';
+import p12 from './assets/p12.jpeg';
+
+import s4 from './assets/s4.jpeg';
+import s5 from './assets/s5.jpeg';
+import s6 from './assets/s6.jpeg';
+import s7 from './assets/s7.jpeg';
+import s8 from './assets/s8.jpeg';
+import s9 from './assets/s9.jpeg';
+import s10 from './assets/s10.jpeg';
+import s11 from './assets/s11.jpeg';
+import s12 from './assets/s12.jpeg';
+import s13 from './assets/s13.jpeg';
+import s14 from './assets/s14.jpeg';
+import s15 from './assets/s15.jpeg';
+import s16 from './assets/s16.jpeg';
+import p13 from './assets/p13.jpeg';
+import p14 from './assets/p14.jpeg';
+import p15 from './assets/p15.jpeg';
+import p16 from './assets/p16.jpeg';
+import p17 from './assets/p17.jpeg';
+import p18 from './assets/p18.jpeg';
+import p19 from './assets/p19.jpeg';
+import pl1 from './assets/pl1.jpeg';
+import pl2 from './assets/pl2.jpeg';
+import pl3 from './assets/pl3.jpeg';
+import pl4 from './assets/pl4.jpeg';
+import pl5 from './assets/pl5.jpeg';
+import pl6 from './assets/pl6.jpeg';
+import pl7 from './assets/pl7.jpeg';
+import pl8 from './assets/pl8.jpeg';
+import pl9 from './assets/pl9.jpeg';
+import pl10 from './assets/pl10.jpeg';
+import pl11 from './assets/pl11.jpeg';
+import pl12 from './assets/pl12.jpeg';
+import pl13 from './assets/pl13.jpeg';
+import pl14 from './assets/pl14.jpeg';
+import pl15 from './assets/pl15.jpeg';
+import pl16 from './assets/pl16.jpeg';
+import pl17 from './assets/pl17.jpeg';
+
+import e2 from './assets/e2.jpeg';
+import e3 from './assets/e3.jpeg';
+import e4 from './assets/e4.jpeg';
+import e5 from './assets/e5.jpeg';
+import e6 from './assets/e6.jpeg';
+import e7 from './assets/e7.jpeg';
+import e8 from './assets/e8.jpeg';
+import e9 from './assets/e9.jpeg';
+
 
 /* ============================================================
    DONNÉES — modifiez ici vos infos, tarifs, témoignages
@@ -14,11 +74,10 @@ const CONTACT = {
   phone: "771612935",
   whatsapp: "221771612935",
   email: "Salioudiop292@gmail.com",
-  instagram: "https://www.instagram.com/zazaldesignofficiel",
-  tiktok: "https://www.tiktok.com/@zazal.d",
+  instagram: "https://www.instagram.com/zazal_design_officiel?igsh=MWx6ZGJscGV6YWpmZw==",
+  tiktok: "https://www.tiktok.com/@zazal.d?_r=1&_t=ZS-95OZskQwbQX",
   address: "DKR / Diamaguène / Tally Mame Diarra",
 };
-
 const PRICING = [
   { photos: 2,  price: 3000,  popular: false },
   { photos: 3,  price: 5000,  popular: false },
@@ -35,46 +94,81 @@ const GALLERY_DATA = [
   {
     id: "studio", label: "Studio", icon: "🎬",
     photos: [
-      { src: studio1, alt: "Séance studio pro 1", bg: "#1a1a2e" },
-      // { src: null, alt: "Séance studio pro 2", bg: "#16213e" },
-      // { src: null, alt: "Séance studio pro 3", bg: "#0f3460" },
-      // { src: null, alt: "Séance studio pro 4", bg: "#1a1a3e" },
+      { src: s1, alt: "Séance studio pro 1", bg: "#1a1a2e" },
+      { src: s2, alt: "Séance studio pro 2", bg: "#16213e" },
+       { src: s3, alt: "Séance studio pro 3", bg: "#0f3460" },
+      { src: s4, alt: "Séance studio pro 4", bg: "#0d1b2a" },
+        { src: s5, alt: "Séance studio pro 5", bg: "#1a2332" },
+        { src: s6, alt: "Séance studio pro 6", bg: "#0f1824" },
+        { src: s7, alt: "Séance studio pro 7", bg: "#1e2d3d" },
+        { src: s8, alt: "Séance studio pro 8", bg: "#0a1420" },
+        { src: s9, alt: "Séance studio pro 9", bg: "#1a2939" },
+        { src: s10, alt: "Séance studio pro 10", bg: "#132231" },
+        { src: s11, alt: "Séance studio pro 11", bg: "#1f2e3e" },
+        { src: s12, alt: "Séance studio pro 12", bg: "#0c1922" },
+        { src: s13, alt: "Séance studio pro 13", bg: "#1b2a3a" },
+        { src: s14, alt: "Séance studio pro 14", bg: "#0e1d2c" },
+        { src: s15, alt: "Séance studio pro 15", bg: "#1c2b3b" },
+        { src: s16, alt: "Séance studio pro 15", bg: "#1c2b3b" },
     ],
   },
   {
-    id: "portrait", label: "Portrait", icon: "👤",
+    id: "portrait", label: "Street photo", icon: "👤",
     photos: [
-      { src: portrait1, alt: "Portrait artistique 1", bg: "#2d1b00" },
-      // { src: null, alt: "Portrait artistique 2", bg: "#3d2200" },
-      // { src: null, alt: "Portrait artistique 3", bg: "#1a0a00" },
-      // { src: null, alt: "Portrait artistique 4", bg: "#4a2b00" },
-    ],
-  },
-  {
-    id: "famille", label: "Famille", icon: "👨‍👩‍👧",
-    photos: [
-      { src: famille1, alt: "Photo de famille 1", bg: "#001a1a" },
-      // { src: null, alt: "Photo de famille 2", bg: "#003333" },
-      // { src: null, alt: "Photo de famille 3", bg: "#002626" },
-      // { src: null, alt: "Photo de famille 4", bg: "#004040" },
-    ],
-  },
-  {
-    id: "mariage", label: "Mariage", icon: "💍",
-    photos: [
-      // { src: null, alt: "Mariage cérémonie 1", bg: "#1a0020" },
-      // { src: null, alt: "Mariage cérémonie 2", bg: "#2a0033" },
-      // { src: null, alt: "Mariage cérémonie 3", bg: "#15001a" },
-      { src: mariage1, alt: "Mariage cérémonie 4", bg: "#330040" },
+      { src: p1, alt: "Portrait artistique 1", bg: "#2d1b00" },
+      { src: p2, alt: "Portrait artistique 2", bg: "#3d2200" },
+      { src: p3, alt: "Portrait artistique 3", bg: "#1a0a00" },
+      { src: p4, alt: "Portrait artistique 4", bg: "#4a2b00" },
+      { src: p5, alt: "Portrait artistique 5", bg: "#2a1500" },
+      { src: p6, alt: "Portrait artistique 6", bg: "#3a1f00" },
+      { src: p7, alt: "Portrait artistique 7", bg: "#1a0a00" },
+      { src: p9, alt: "Portrait artistique 9", bg: "#3c2100" },
+      { src: p10, alt: "Portrait artistique 10", bg: "#1b0b00" },
+      { src: p11, alt: "Portrait artistique 11", bg: "#4b2c00" },
+      { src: p12, alt: "Portrait artistique 12", bg: "#2c1600" },
+      { src: p13, alt: "Portrait artistique 13", bg: "#2d1b00" },
+        { src: p14, alt: "Portrait artistique 14", bg: "#3d2200" },
+        { src: p15, alt: "Portrait artistique 15", bg: "#1a0a00" },
+        { src: p16, alt: "Portrait artistique 16", bg: "#4a2b00" },
+        { src: p17, alt: "Portrait artistique 17", bg: "#2a1500" },
+        { src: p18, alt: "Portrait artistique 18", bg: "#3a1f00" },
+        { src: p19, alt: "Portrait artistique 19", bg: "#1a0a00" },
     ],
   },
   {
     id: "evenements", label: "Événements", icon: "🎉",
     photos: [
-      { src: event1, alt: "Événement festif 1", bg: "#1a1000" },
-      // { src: null, alt: "Événement festif 2", bg: "#2a1800" },
-      // { src: null, alt: "Événement festif 3", bg: "#0d0800" },
-      // { src: null, alt: "Événement festif 4", bg: "#332000" },
+      { src: e1, alt: "Événement festif 1", bg: "#1a1000" },
+      { src: e2, alt: "Événement festif 2", bg: "#2a1800" },
+        { src: e3, alt: "Événement festif 3", bg: "#0d0800" },
+        { src: e4, alt: "Événement festif 4", bg: "#332000" },
+        { src: e5, alt: "Événement festif 5", bg: "#1a0a00" },
+        { src: e6, alt: "Événement festif 6", bg: "#2b1600" },
+        { src: e7, alt: "Événement festif 7", bg: "#3c2100" },
+        { src: e8, alt: "Événement festif 8", bg: "#1b0b00" },
+        { src: e9, alt: "Événement festif 9", bg: "#4b2c00" },
+    ],
+  },
+   {
+    id: "plages", label: "Plages", icon: "🏖️",
+    photos: [
+      { src: pl1, alt: "Plage 1", bg: "#1a1000" },
+      { src: pl2, alt: "Plage 2", bg: "#1a1000" },
+        { src: pl3, alt: "Plage 3", bg: "#2a1800" },
+        { src: pl4, alt: "Plage 4", bg: "#0d0800" },
+        { src: pl5, alt: "Plage 5", bg: "#332000" },
+        { src: pl6, alt: "Plage 6", bg: "#1a0a00" },
+        { src: pl7, alt: "Plage 7", bg: "#2b1600" },
+        { src: pl8, alt: "Plage 8", bg: "#3c2100" },
+        { src: pl9, alt: "Plage 9", bg: "#1b0b00" },
+        { src: pl10, alt: "Plage 10", bg: "#4b2c00" },
+        { src: pl11, alt: "Plage 11", bg: "#2c1600" },
+        { src: pl12, alt: "Plage 12", bg: "#2d1b00" },
+        { src: pl13, alt: "Plage 13", bg: "#3d2200" },
+        { src: pl14, alt: "Plage 14", bg: "#1a0a00" },
+        { src: pl15, alt: "Plage 15", bg: "#4a2b00" },
+        { src: pl16, alt: "Plage 16", bg: "#2a1500" },
+        { src: pl17, alt: "Plage 17", bg: "#2a1500" },
     ],
   },
 ];
@@ -571,7 +665,7 @@ function Gallery() {
             <div key={i} className="gallery-card" onClick={() => setLb(p)}
               style={{ aspectRatio: i % 3 === 0 ? "3/4" : "4/3", background: p.bg }}>
               {p.src
-                ? <img src={p.src} alt={p.alt} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                ? <img src={p.src} alt={p.alt} style={{ width: "100%", height: "auto", objectFit: "cover" }} />
                 : <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 10 }}>
                     <span style={{ fontSize: 32, opacity: .3 }}>📷</span>
                     <span style={{ fontFamily: "'Space Mono',monospace", fontSize: 10, color: "rgba(212,168,67,.35)", letterSpacing: ".18em", textTransform: "uppercase", textAlign: "center", padding: "0 12px" }}>{p.alt}</span>
@@ -580,7 +674,7 @@ function Gallery() {
               <div className="overlay">
                 <div>
                   <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 16, color: "#d4a843", fontStyle: "italic" }}>Voir en grand</p>
-                  <div style={{ width: 28, height: 1, background: "#d4a843", marginTop: 5 }} />
+                  <div style={{ width: 40, height: 1, background: "#d4a843", marginTop: 5 }} />
                 </div>
               </div>
               <div className="corner" />
