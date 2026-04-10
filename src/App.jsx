@@ -136,13 +136,6 @@ const GALLERY_DATA = [
         { src: pl8, alt: "Plage 8", bg: "#3c2100" },
         { src: pl9, alt: "Plage 9", bg: "#1b0b00" },
         { src: pl10, alt: "Plage 10", bg: "#4b2c00" },
-        { src: pl11, alt: "Plage 11", bg: "#2c1600" },
-        { src: pl12, alt: "Plage 12", bg: "#2d1b00" },
-        { src: pl13, alt: "Plage 13", bg: "#3d2200" },
-        { src: pl14, alt: "Plage 14", bg: "#1a0a00" },
-        { src: pl15, alt: "Plage 15", bg: "#4a2b00" },
-        { src: pl16, alt: "Plage 16", bg: "#2a1500" },
-        { src: pl17, alt: "Plage 17", bg: "#2a1500" },
     ],
   },
 ];
