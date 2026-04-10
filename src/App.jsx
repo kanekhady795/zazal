@@ -16,29 +16,15 @@ import p6 from './assets/p6.jpeg';
 import p7 from './assets/p7.jpeg';
 import p9 from './assets/p9.jpeg';
 import p10 from './assets/p10.jpeg';
-import p11 from './assets/p11.jpeg';
-import p12 from './assets/p12.jpeg';
 
 import s4 from './assets/s4.jpeg';
 import s5 from './assets/s5.jpeg';
 import s6 from './assets/s6.jpeg';
 import s7 from './assets/s7.jpeg';
 import s8 from './assets/s8.jpeg';
+
 import s9 from './assets/s9.jpeg';
 import s10 from './assets/s10.jpeg';
-import s11 from './assets/s11.jpeg';
-import s12 from './assets/s12.jpeg';
-import s13 from './assets/s13.jpeg';
-import s14 from './assets/s14.jpeg';
-import s15 from './assets/s15.jpeg';
-import s16 from './assets/s16.jpeg';
-import p13 from './assets/p13.jpeg';
-import p14 from './assets/p14.jpeg';
-import p15 from './assets/p15.jpeg';
-import p16 from './assets/p16.jpeg';
-import p17 from './assets/p17.jpeg';
-import p18 from './assets/p18.jpeg';
-import p19 from './assets/p19.jpeg';
 import pl1 from './assets/pl1.jpeg';
 import pl2 from './assets/pl2.jpeg';
 import pl3 from './assets/pl3.jpeg';
@@ -49,13 +35,6 @@ import pl7 from './assets/pl7.jpeg';
 import pl8 from './assets/pl8.jpeg';
 import pl9 from './assets/pl9.jpeg';
 import pl10 from './assets/pl10.jpeg';
-import pl11 from './assets/pl11.jpeg';
-import pl12 from './assets/pl12.jpeg';
-import pl13 from './assets/pl13.jpeg';
-import pl14 from './assets/pl14.jpeg';
-import pl15 from './assets/pl15.jpeg';
-import pl16 from './assets/pl16.jpeg';
-import pl17 from './assets/pl17.jpeg';
 
 import e2 from './assets/e2.jpeg';
 import e3 from './assets/e3.jpeg';
@@ -65,6 +44,11 @@ import e6 from './assets/e6.jpeg';
 import e7 from './assets/e7.jpeg';
 import e8 from './assets/e8.jpeg';
 import e9 from './assets/e9.jpeg';
+import s11 from './assets/s11.jpeg';
+import s12 from './assets/s12.jpeg';
+import s13 from './assets/s13.jpeg';
+import s14 from './assets/s14.jpeg';
+import s15 from './assets/s15.jpeg';
 
 
 /* ============================================================
@@ -104,12 +88,11 @@ const GALLERY_DATA = [
         { src: s8, alt: "Séance studio pro 8", bg: "#0a1420" },
         { src: s9, alt: "Séance studio pro 9", bg: "#1a2939" },
         { src: s10, alt: "Séance studio pro 10", bg: "#132231" },
-        { src: s11, alt: "Séance studio pro 11", bg: "#1f2e3e" },
-        { src: s12, alt: "Séance studio pro 12", bg: "#0c1922" },
-        { src: s13, alt: "Séance studio pro 13", bg: "#1b2a3a" },
-        { src: s14, alt: "Séance studio pro 14", bg: "#0e1d2c" },
-        { src: s15, alt: "Séance studio pro 15", bg: "#1c2b3b" },
-        { src: s16, alt: "Séance studio pro 15", bg: "#1c2b3b" },
+        { src: s11, alt: "Séance studio pro 11", bg: "#0d1f2d" },
+        { src: s12, alt: "Séance studio pro 12", bg: "#1a2a3a" },
+        { src: s13, alt: "Séance studio pro 13", bg: "#0f1a28" },
+        { src: s14, alt: "Séance studio pro 14", bg: "#1e2f3f" },
+        { src: s15, alt: "Séance studio pro 15", bg: "#0a1520" },
     ],
   },
   {
@@ -124,15 +107,6 @@ const GALLERY_DATA = [
       { src: p7, alt: "Portrait artistique 7", bg: "#1a0a00" },
       { src: p9, alt: "Portrait artistique 9", bg: "#3c2100" },
       { src: p10, alt: "Portrait artistique 10", bg: "#1b0b00" },
-      { src: p11, alt: "Portrait artistique 11", bg: "#4b2c00" },
-      { src: p12, alt: "Portrait artistique 12", bg: "#2c1600" },
-      { src: p13, alt: "Portrait artistique 13", bg: "#2d1b00" },
-        { src: p14, alt: "Portrait artistique 14", bg: "#3d2200" },
-        { src: p15, alt: "Portrait artistique 15", bg: "#1a0a00" },
-        { src: p16, alt: "Portrait artistique 16", bg: "#4a2b00" },
-        { src: p17, alt: "Portrait artistique 17", bg: "#2a1500" },
-        { src: p18, alt: "Portrait artistique 18", bg: "#3a1f00" },
-        { src: p19, alt: "Portrait artistique 19", bg: "#1a0a00" },
     ],
   },
   {
