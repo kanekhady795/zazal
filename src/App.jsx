@@ -51,6 +51,8 @@ import s13 from './assets/s13.jpeg';
 import s14 from './assets/s14.jpeg';
 import s15 from './assets/s15.jpeg';
 
+import zazal from './assets/zz.jpeg';
+
 
 /* ============================================================
    DONNÉES — modifiez ici vos infos, tarifs, témoignages
@@ -1137,6 +1139,29 @@ export default function App() {
       <Footer />
       {/* WhatsApp float */}
       <a href={`https://wa.me/${CONTACT.whatsapp}`} target="_blank" rel="noopener noreferrer" className="wapp-float" title="WhatsApp">💬</a>
+      <a
+  href="#"
+  style={{
+    position: "fixed",
+    bottom: "10px",
+    left: "20px",
+    zIndex: 9999
+  }}
+>
+  <img
+    src={zazal}
+    alt="Profil"
+    style={{
+      width: "75px",
+      height: "85px",
+      borderRadius: "50%",
+      objectFit: "cover",
+      border: "3px solid #171f1a",
+      boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
+      cursor: "pointer"
+    }}
+  />
+</a>
     </div>
   );
 }
