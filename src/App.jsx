@@ -1152,9 +1152,10 @@ export default function App() {
     src={zazal}
     alt="Profil"
     style={{
-      width: "75px",
-      height: "85px",
+      width: "95px",
+      height: "125px",
       borderRadius: "50%",
+      justifyContent: "center",
       objectFit: "cover",
       border: "3px solid #171f1a",
       boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
