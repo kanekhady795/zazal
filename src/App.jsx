@@ -16,6 +16,7 @@ import p6 from './assets/p6.jpeg';
 import p7 from './assets/p7.jpeg';
 import p9 from './assets/p9.jpeg';
 import p10 from './assets/p10.jpeg';
+import wave from './assets/wave.png';
 
 import s4 from './assets/s4.jpeg';
 import s5 from './assets/s5.jpeg';
@@ -1115,7 +1116,7 @@ export default function App() {
       display: "inline-flex",
       alignItems: "center",
       gap: 8,
-      background: "linear-gradient(135deg, #d4a843, #d4a843)",
+      background: "linear-gradient(135deg, #927c48, #413a2a)",
       color: "#fff",
       fontFamily: "sans-serif",
       fontWeight: 700,
@@ -1125,7 +1126,12 @@ export default function App() {
       borderRadius: 4,
     }}
   >
-     Veuillez payer par wave en cliquant ici
+    <img
+      src={wave}
+      alt="Wave"
+      style={{ width: 50, height: 50 }}
+    />
+     Payer ici par Wave
     </a>
 </div>
       <Footer />
