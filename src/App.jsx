@@ -177,6 +177,8 @@ const SESSION_TYPES = [
   "Photo Business / CV",
   "Autre",
 ];
+const WAVE_LINK = "https://pay.wave.com/m/M_sn_b1OHZJWN4RX4/c/sn/";
+
 
 /* ============================================================
    STYLES GLOBAUX (injectés une seule fois)
@@ -1103,6 +1105,29 @@ export default function App() {
       <Testimonials />
       <Reservation prefill={prefill} />
       <Contact />
+      {/* Bouton Wave */}
+<div style={{ textAlign: "center", margin: "40px 0" }}>
+  <a
+    href={WAVE_LINK}
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: "inline-flex",
+      alignItems: "center",
+      gap: 8,
+      background: "linear-gradient(135deg, #d4a843, #d4a843)",
+      color: "#fff",
+      fontFamily: "sans-serif",
+      fontWeight: 700,
+      fontSize: 14,
+      padding: "12px 24px",
+      textDecoration: "none",
+      borderRadius: 4,
+    }}
+  >
+     Veuillez payer par wave en cliquant ici
+    </a>
+</div>
       <Footer />
       {/* WhatsApp float */}
       <a href={`https://wa.me/${CONTACT.whatsapp}`} target="_blank" rel="noopener noreferrer" className="wapp-float" title="WhatsApp">💬</a>
