@@ -4,20 +4,8 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import s1 from './assets/s1.jpeg';
 import s2 from './assets/s2.jpeg';
 import s3 from './assets/s3.jpeg';
-
-import p1 from './assets/p1.jpeg';
 import e1 from './assets/e1.jpeg';
-
-import p2 from './assets/p2.jpeg';
-import p3 from './assets/p3.jpeg';
-import p4 from './assets/p4.jpeg';
-import p5 from './assets/p5.jpeg';
-import p6 from './assets/p6.jpeg';
-import p7 from './assets/p7.jpeg';
-import p9 from './assets/p9.jpeg';
-import p10 from './assets/p10.jpeg';
 import wave from './assets/wave.png';
-
 import s4 from './assets/s4.jpeg';
 import s5 from './assets/s5.jpeg';
 import s6 from './assets/s6.jpeg';
@@ -96,20 +84,6 @@ const GALLERY_DATA = [
         { src: s13, alt: "Séance studio pro 13", bg: "#0f1a28" },
         { src: s14, alt: "Séance studio pro 14", bg: "#1e2f3f" },
         { src: s15, alt: "Séance studio pro 15", bg: "#0a1520" },
-    ],
-  },
-  {
-    id: "portrait", label: "Street photo", icon: "👤",
-    photos: [
-      { src: p1, alt: "Portrait artistique 1", bg: "#2d1b00" },
-      { src: p2, alt: "Portrait artistique 2", bg: "#3d2200" },
-      { src: p3, alt: "Portrait artistique 3", bg: "#1a0a00" },
-      { src: p4, alt: "Portrait artistique 4", bg: "#4a2b00" },
-      { src: p5, alt: "Portrait artistique 5", bg: "#2a1500" },
-      { src: p6, alt: "Portrait artistique 6", bg: "#3a1f00" },
-      { src: p7, alt: "Portrait artistique 7", bg: "#1a0a00" },
-      { src: p9, alt: "Portrait artistique 9", bg: "#3c2100" },
-      { src: p10, alt: "Portrait artistique 10", bg: "#1b0b00" },
     ],
   },
   {
